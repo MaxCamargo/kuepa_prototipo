@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Control de Asistencia</title>
+    <link rel="canonical" href="http://www.kuepa.com/co" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/type.css" />
+    <script
+      src="https://kit.fontawesome.com/917f0fc60b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/datetimebox.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="containerred2">
+      <header class="up">
+        <img src="images/logo.png" alt="23andfour" class="logo" />
+        <nav class="">
+          <a href="#" class="hide-desktop">
+            <img
+              src="images/ham.svg"
+              alt="tongle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+          <ul class="show-desktop hide-mobile HelveticaLt" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="images/exit.svg" alt="exit menu" />
+            </li>
+            <li><a href="#">Nuestra metodología</a></li>
+            <li><a href="#"> ¿Quiénes somos?</a></li>
+            <li><a href="#">Programas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li>
+              <a>
+                <button type="button" class="btn btn-primary mybt">
+                  Mis Reportes
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="images/avatar5.png" alt="Avatar" class="avatar"/></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="secction1">
+        <img src="images/server.svg" alt="server" class="server" />
+        <h1 class="GothamB font32">
+          Crea el reporte de control de asistencia de tus estudiantes
+        </h1>
+        <p class="HelveticaLt font20">
+          ¡Es muy fácil! Selecciona e ingresa los datos.
+        </p>
+        <img
+          src="images/scroll.svg"
+          alt="scroll dowwn"
+          class="scroll hide-mobile show-desktop"
+        />
+      </section>
+    </div>
+    <div class="container"></div>
+    <div class="blue-container">
+      <div class="containerred">
+        <p class="HelveticaLt font20">
+          Ingresa aquí los datos de tus estudiates
+        </p>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Nombre del reporte"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Programa</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected></option>
+            <option value="1">Inglés</option>
+            <option value="2">Tecnico en Desarrolo</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Curso/Grupo</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected></option>
+            <option value="1">Grupo1</option>
+            <option value="2">Grupo2</option>
+            <option value="3">Grupo3</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Sedes</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect02">
+            <option selected></option>
+            <option value="1">Sede Calle 72</option>
+            <option value="2">Sede Álamos</option>
+            <option value="3">Sede Restrepo</option>
+          </select>
+        </div>
+        <p class="HelveticaBd font18">Nombre del Estudiante y codigo</p>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputState">Estudiantes</label>
+            <select id="inputState" class="form-control">
+              <option selected>Selecione uno...</option>
+              <option>Pedro Paez</option>
+              <option>Luis Martinez</option>
+              <option>Karen Diaz</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Asistencia</label>
+            <select id="inputState" class="form-control">
+              <option selected>Selecione uno...</option>
+              <option>Asistio</option>
+              <option>No asistio</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <!-- Date input -->
+            <label class="control-label" for="date">Fecha</label>
+            <input
+              class="form-control"
+              id="date"
+              name="date"
+              placeholder="MM/DD/YYY"
+              type="text"
+            />
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block mybt">
+            Cargar Información
+          </button>
+        </div>
+      </div>
+      <div class="gray-container">
+        <div class="container">
+          <h4 class="HelveticaLt font14">Visualización del reporte</h4>
+          <p class="HelveticaBd h4 font20 bold">
+            REPORTE CURSO 2<br />26 DE OCTUBRE 2019<br /><kbd>Grupo1</kbd>
+          </p>
+          <div class="table-responsive-lg mt-5">
+            <table class="table">
+              <thead>
+                <tr class="bg-tablestudents table-light">
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre y Apellido</th>
+                  <th scope="col">Programa</th>
+                  <th scope="col">Sede</th>
+                  <th scope="col">Editar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Perez</td>
+                  <td>Álamos</td>
+                  <td>
+                    <button type="button" class="btn btn-primary mybt">
+                      <i class="far fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Romero</td>
+                  <td>Álamos</td>
+                  <td>
+                    <button type="button" class="btn btn-primary mybt">
+                      <i class="far fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Camila</td>
+                  <td>Carrillo</td>
+                  <td>Álamos</td>
+                  <td>
+                    <button type="button" class="btn btn-primary mybt">
+                      <i class="far fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="containerbotones">
+              <div class="container">
+                <button type="button" class="btn-lg btn-block btn-primary mybt">
+                  Descargar
+                </button>
+                <button type="button" class="btn-lg btn-block btn-primary mybt">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="containerred3">
+          <p>Copyright © 2019 Kuepa. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var menu = document.getElementById("menu");
+    var nav = document.getElementById("nav");
+    var exit = document.getElementById("exit");
+
+    menu.addEventListener("click", function(e) {
+      nav.classList.toggle("hide-mobile");
+      e.preventDefault();
+    });
+
+    exit.addEventListener("click", function(e) {
+      nav.classList.add("hide-mobile");
+      e.preventDefault();
+    });
+  </script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    $("#sidebar-closebox").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(".modalTitleText").on("show.bs.modal", function(event) {
+      var button = $(event.relatedTarget);
+      var recipient = button.data("title");
+      var modal = $(this);
+      modal.find(".modal-title").text(recipient);
+      modal.find(".modal-body input").val(recipient);
+    });
+
+    $(".kcw-land-btn-xs").click(function(e) {
+      e.preventDefault();
+      $(".kcw-form-container").toggleClass("toggled");
+    });
+  </script>
+</html>
